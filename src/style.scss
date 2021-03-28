@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+#quote-box {
+  width: 450px;
+  padding: 40px 50px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  /*   transition: 1s; */
+}
+
+.quote-text {
+  text-align: center;
+  font-weight: 500;
+}
+
+#quote-box,
+.quote-text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+
+.fa-quote-left:before {
+  content: "\f10d";
+}
+.quote-text .fa-quote-left {
+  font-size: 1.75em;
+}
+
+.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  display: inline-block;
+}
+
+#author {
+  text-align: right;
+  padding-top: 20px;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+.button {
+  .fa-twitter,
+  .fa-tumblr {
+    font-size: 1.4em;
+    margin-right: 5px;
+    height: 25px;
+    width: 30px;
+    padding: 6px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 3px;
+    color: white;
+    opacity: 1;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+  }
+  .button:hover {
+    opacity: 0.9;
+  }
+}
+
+/*.button .fa-twitter,
+.button .fa-tumblr {
+  font-size: 1.4em;
+  margin-right: 5px;
+  height: 25px;
+  width: 30px;
+  padding: 6px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 3px;
+  color: white;
+  opacity: 1;
+  // transition: 1s;
+}*/
+
+.buttons {
+  margin-top: 30px;
+}
+
+#new-quote {
+  float: right;
+  font-size: 0.85em;
+  height: 37px;
+  padding: 8px 18px 6px 18px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+  /*   transition: 1s; */
+}
+
+#new-quote:hover,
+.buttons /*.button:hover*/ {
+  opacity: 0.9;
+}
+#new-quote,
+#new-quote:active,
+#new-quote:focus {
+  outline: none;
+}
+
+#text {
+  font-size: 1.75em;
+  fontweight: 500;
+}
+
+body,
+// .button .fa-twitter,
+// .button .fa-tumblr,
+#new-quote {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
